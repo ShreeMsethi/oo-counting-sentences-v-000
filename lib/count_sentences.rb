@@ -23,6 +23,6 @@ class String
     # self.split(/\w[?!.]/).length
     # self.split(/\w[?!.]/).delete_if{|w| Test for size in here}.length
     
-    self.split(/[.!?]/).map{|x| !(x.match(/\w+/).nil?)}.reject{|x| x == false}.size
+    self.split(/[.!?]/).map{|x| !(x.match(/\w/).nil?)}.reject{|x| x == false}.size
   end
-end
+end 
